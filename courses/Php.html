@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cour1.css">
+</head>
+<body>
+	<header>
+		<nav id="navbar" class="sticky">
+			<ul>
+				<li><a href="../HOME/index.html"> HOME </a></li>
+				<li class="cour"><a href="Html.html"> Html           </a></li>
+				<li class="cour"><a href="Css.html"> Css             </a></li>
+		        <li class="cour"><a href="JavaScript.html">JavaScript</a></li>
+				<li class="cour thisCours"><a href="PHP.html"> Php             </a></li>
+				<li><a href="../quizes/quiz4.html"> Quizes </a></li>
+				<li class="drop">
+					<div class="dropdown">
+					  <button class="dropbtn" onclick="myFunction()">Cours  &#9661;
+					  </button>
+					  <div class="dropdown-content" id="myDropdown">
+					    <a href="Html.html"> Html           </a>
+					    <a href="Css.html"> Css             </a>
+					    <a href="JavaScript.html">JavaScript</a>
+						<a href="PHP.html"> Php             </a> 
+					   </div>
+					  </div> 
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+  <div class="sidebar">  
+	  <p class="active" onclick="show_part(0) ;">HTML Editors</p>
+	  <p onclick="show_part(1) ;" > HTML Basic</p>
+	  <p onclick="show_part(2) ;" >HTML Elements</p>
+	  <p onclick="show_part(3) ;" >HTML Attributes</p>
+	  <p onclick="show_part(4) ;" >HTML headings</p>
+	  <p class="Quiz"><a href="">Quiz</a></p>
+	
+  </div>
+
+ <div class="content">
+ 	<br>
+	 <div id="myProgress">
+	  <div id="myBar">0%</div>
+	</div>
+	<div id="cours_part0" class="courspart">
+	  <h2>Write HTML Using Notepad or TextEdit</h2>
+	  <p>Web pages can be created and modified by using professional HTML editors.</p>
+	  <p>However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).
+	  </p>
+	  <p>We believe using a simple text editor is a good way to learn HTML.</p>
+	  <p>Follow the four steps below to create your first web page with Notepad or 
+       TextEdit.</p>
+	</div>
+	<div id="cours_part1" class="courspart" style="display: none">
+	  <h2>HTML Documents</h2>
+	  <p>All HTML documents must start with a document type declaration: <code>&lt;!DOCTYPE html&gt;</code>.</p>
+	  <p>The HTML document itself begins with <code>&lt;html&gt;</code> and ends with <code>&lt;/html&gt;</code>.</p>
+	  <p>The visible part of the HTML document is between <code>&lt;body&gt;</code> and <code >&lt;/body&gt;</code>. </p>
+	</div>
+	<div id="cours_part2" class="courspart" style="display: none;">
+	  <h2>Elements</h2>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	  consequat.</p><p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+	  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div id="cours_part3"class="courspart" style="display: none;">
+	   <h2>Attributes</h2>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	  consequat.</p><p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+	  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div id="cours_part4" class="courspart" style="display: none;">
+	   <h2>headings</h2>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	  consequat.</p><p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+	  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+ 
+<div class="btns">
+ <button id="previous" onclick="previous();" >Previous &laquo; </button>
+ <button id="next" onclick="next();">Next &raquo; </button>
+</div>
+</div>
+   
+</body>
+<script type="text/javascript" src="cour1.js"></script>
+</html>

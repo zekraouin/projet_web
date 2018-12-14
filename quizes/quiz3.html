@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+	<link rel="stylesheet" type="text/css" href="../courses/cour1.css">
+</head>
+<body>
+	<header>
+		<nav id="navbar" class="sticky">
+			<ul>
+				<li><a href="../HOME/index.html"> HOME </a></li>
+				<li class="cour "><a href="quiz1.html"> Html           </a></li>
+				<li class="cour "><a href="quiz2.html"> Css             </a></li>
+		        <li class="cour thisCours"><a href="quiz3.html">JavaScript</a></li>
+				<li class="cour"><a href="quiz4.html"> Php             </a></li>
+				<li><a href="../courses/JavaScript.html"> Courses </a></li>
+				<li class="drop">
+					<div class="dropdown">
+					  <button class="dropbtn" onclick="myFunction()">Quizes  &#9661;
+					  </button>
+					  <div class="dropdown-content" id="myDropdown">
+					    <a href="quiz1.html"> Html Quiz        </a>
+					    <a href="quiz2.html"> Css  Quiz    </a>
+					    <a href="quiz3.html">JavaScript Quiz</a>
+						<a href="quiz4.html"> Php  Quiz    </a> 
+					   </div>
+					  </div> 
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div id="qst1" class="question">
+			<h3>JavaScript Quiz</h3>
+			<h2>1. Question ?</h2>
+			<label class="container container1">One
+			  <input type="radio" name="radio1" class="answer1" >
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container1">Two
+			  <input type="radio" name="radio1" class="answer1" >
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container1">Three
+			  <input type="radio" name="radio1" class="answer1">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container1">Four
+			  <input type="radio" name="radio1" class="answer1" >
+			  <span class="checkmark"></span>
+			</label>
+			<button onclick="next() ;">Suivant</button>
+		</div>
+		<div id="qst2" class="question hide">
+			<h3>JavaScript Quiz</h3>
+			<h2>1. Question ?</h2>
+			<label class="container container2">One
+			  <input type="radio" name="radio" class="answer2">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container2">Two
+			  <input type="radio" name="radio" class="answer2">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container2">Three
+			  <input type="radio" name="radio"class="answer2">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container2">Four
+			  <input type="radio" name="radio"class="answer2">
+			  <span class="checkmark"></span>
+			</label>
+			<button onclick="next() ;">Suivant</button>
+		</div>
+		<div id="qst3" class="question hide">
+			<h3>JavaScript Quiz</h3>
+			<h2>1. Question ?</h2>
+			<label class="container container3">One
+			  <input type="radio" name="radio" class="answer3">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container3">Two
+			  <input type="radio" name="radio" class="answer3">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container3">Three
+			  <input type="radio" name="radio" class="answer3">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container3">Four
+			  <input type="radio" name="radio"class="answer3">
+			  <span class="checkmark"></span>
+			</label>
+			<button onclick="next() ;">Suivant</button>
+		</div>
+		<div id="qst4" class="question hide">
+			<h3>JavaScript Quiz</h3>
+			<h2>1. Question ?</h2>
+			<label class="container container4">One
+			  <input type="radio" name="radio" class="answer4">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container4">Two
+			  <input type="radio" name="radio" class="answer4">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container4">Three
+			  <input type="radio" name="radio" class="answer4">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container4">Four
+			  <input type="radio" name="radio" class="answer4">
+			  <span class="checkmark"></span>
+			</label>
+			<button onclick="next() ;">Suivant</button>
+		</div>
+		<div id="qst5" class="question hide">
+			<h3>JavaScript Quiz</h3>
+			<h2>1. Question ?</h2>
+			<label class="container container5">One
+			  <input type="radio" name="radio" class="answer5">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container5">Two
+			  <input type="radio" name="radio" class="answer5">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container5">Three
+			  <input type="radio" name="radio" class="answer5">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container5">Four
+			  <input type="radio" name="radio" class="answer5">
+			  <span class="checkmark"></span>
+			</label>
+			<button onclick="show_score() ;">Submit</button>
+		</div>
+		<div id="ScoreMenu" class="question hide">
+			<h3>Your Score is:</h3>
+		   <div class="rate">	
+			<span id="Score1" class="star">★</span>
+			<span id="Score2" class="star">★</span>
+			<span id="Score3" class="star">★</span>
+			<span id="Score4" class="star">★</span>
+			<span id="Score5" class="star">★</span>
+			</div>
+			<br>
+			<span id="TotalScore">0%</span>
+		</div><br><br>
+
+	</main>
+   
+</body>
+<script type="text/javascript" src="quiz.js"></script>
+</html>

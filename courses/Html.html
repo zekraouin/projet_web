@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cour1.css">
+</head>
+<body>
+	<header>
+		<nav id="navbar" class="sticky">
+			<ul>
+				<li><a href="../HOME/index.html"> HOME </a></li>
+				<li class="cour thisCours" ><a href="Html.html"> HTML           </a></li>
+				<li class="cour"><a href="Css.html"> Css             </a></li>
+		        <li class="cour"><a href="JavaScript.html">JavaScript</a></li>
+				<li class="cour"><a href="PHP.html"> Php             </a></li>
+				<li><a href="../quizes/quiz1.html"> Quizes </a></li>
+				<li class="drop">
+					<div class="dropdown">
+					  <button class="dropbtn" onclick="myFunction()">Cours  &#9661;
+					  </button>
+					  <div class="dropdown-content" id="myDropdown">
+					    <a href="Html.html"> Html           </a>
+					    <a href="Css.html"> Css             </a>
+					    <a href="JavaScript.html">JavaScript</a>
+						<a href="PHP.html"> Php             </a> 
+					   </div>
+					  </div> 
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+  <div class="sidebar">
+      <p class="active" onclick="show_part(0) ;">Introduction</p>  
+	  <p onclick="show_part(1) ;">HTML Editors</p>
+	  <p onclick="show_part(2) ;" > HTML Basic</p>
+	  <p onclick="show_part(3) ;" >HTML Elements</p>
+	  <p onclick="show_part(4) ;" >HTML Attributes</p>
+	  <p onclick="show_part(5) ;" >HTML headings</p>
+	  <p class="Quiz"><a href="../quizes/quiz1.html"> Quizes </a></p>
+	
+  </div>
+
+ <div class="content">
+ 	<br>
+	 <div id="myProgress">
+	  <div id="myBar">0%</div>
+	</div>
+	<div id="cours_part0" class="courspart">
+
+	  <h2>What is HTML ?</h2>
+	  <p>HTML is the standard markup language for creating Web pages. HTML stands for Hyper Text Markup Language. HTML describes the structure of Web pages using markup.</p>
+	  <p>With HTML you can create your own Website.</p>
+	  <p>This tutorial teaches you everything about HTML.</p>
+	  <p>HTML is easy to learn - You will enjoy it.</p>
+	  
+	</div>
+	<div id="cours_part1" class="courspart"  style="display: none">
+	  <h2>Write HTML Using Notepad or TextEdit</h2>
+	  <p>Web pages can be created and modified by using professional HTML editors.</p>
+	  <p>However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).
+	  </p>
+	  <p>We believe using a simple text editor is a good way to learn HTML.</p>
+	  <p>Follow the four steps below to create your first web page with Notepad or 
+       TextEdit.</p>
+	</div>
+	<div id="cours_part2" class="courspart" style="display: none">
+	  <h2>HTML Documents</h2>
+	  <p>All HTML documents must start with a document type declaration: <code>&lt;!DOCTYPE html&gt;</code>.</p>
+	  <p>The HTML document itself begins with <code>&lt;html&gt;</code> and ends with <code>&lt;/html&gt;</code>.</p>
+	  <p>The visible part of the HTML document is between <code>&lt;body&gt;</code> and <code >&lt;/body&gt;</code>. </p>
+	</div>
+	<div id="cours_part3" class="courspart" style="display: none;">
+	  <h2>Elements</h2>
+	  <p>An HTML element usually consists of a <strong>start</strong> tag and <strong>end</strong> tag,with the content inserted in between:</p>
+      <span style="color:brown">
+      	<span style="color:mediumblue">&lt;</span>
+      	p
+      	<span style="color:mediumblue">&gt;</span>
+        </span>My first paragraph.<span style="color:brown">
+        <span style="color:mediumblue">&lt;</span>
+        /p
+        <span style="color:mediumblue">&gt;</span>
+    </span>
+     <p>HTML elements with no content are called empty elements. Empty elements do not have an end tag, such as the &lt;br&gt; element (which indicates a line break).</p>
+	</div>
+	<div id="cours_part4"class="courspart" style="display: none;">
+	   <h2>Attributes</h2>
+	  <ul>
+		  <li>All HTML elements can have <b>attributes</b></li>
+		  <li>Attributes provide <b>additional information</b> about an element</li>
+		  <li>Attributes are always specified in <b>the start tag</b></li>
+		  <li>Attributes usually come in name/value pairs like: <b>name="value"</b></li>
+	  </ul>
+	</div>
+	<div id="cours_part5" class="courspart" style="display: none;">
+	   <h2>headings</h2>
+	  <p>Headings are defined with the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags.</p>
+	  <p>Headings are used to represent Titles or subtitles EX:</p>
+	  <h1>Headings (h1)</h1>
+	  <h2>Headings (h2)</h2>
+	  <h3>Headings (h3)</h3>
+	</div>
+ 
+<div class="btns">
+ <button id="previous" onclick="previous();" >Previous &laquo; </button>
+ <button id="next" onclick="next();">Next &raquo; </button>
+</div>
+</div>
+   
+</body>
+<script type="text/javascript" src="cour1.js"></script>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cour1.css">
+</head>
+<body>
+	<header>
+		<nav id="navbar" class="sticky">
+			<ul>
+				<li><a href="../HOME/index.html"> HOME </a></li>
+				<li class="cour"><a href="Html.html"> Html           </a></li>
+				<li class="cour thisCours"><a href="Css.html"> Css             </a></li>
+		        <li class="cour"><a href="JavaScript.html">JavaScript</a></li>
+				<li class="cour"><a href="PHP.html"> Php             </a></li>
+				<li><a href="../quizes/quiz2.html"> Quizes </a></li>
+				<li class="drop">
+					<div class="dropdown">
+					  <button class="dropbtn" onclick="myFunction()">Cours  &#9661;
+					  </button>
+					  <div class="dropdown-content" id="myDropdown">
+					    <a href="Html.html"> Html           </a>
+					    <a href="Css.html"> Css             </a>
+					    <a href="JavaScript.html">JavaScript</a>
+						<a href="PHP.html"> Php             </a> 
+					   </div>
+					  </div> 
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+  <div class="sidebar">  
+	  <p class="active" onclick="show_part(0) ;">Introduction</p>
+	  <p onclick="show_part(1) ;" >Css syntax </p>
+	  <p onclick="show_part(2) ;" >How To ?</p>
+	  <p onclick="show_part(3) ;" >Css Colors</p>
+	  <p onclick="show_part(4) ;" >Css Backgrounds</p>
+	  <p class="Quiz"><a href="">Quiz</a></p>
+	
+  </div>
+
+ <div class="content">
+ 	<br>
+	 <div id="myProgress">
+	  <div id="myBar">0%</div>
+	</div>
+	<div id="cours_part0" class="courspart">
+	  <h2>What is css ?</h2>
+	  <p>CSS is a language that describes the style of an HTML document. <br>
+         CSS describes how HTML elements should be displayed. <br>
+         This tutorial will teach you CSS from basic to advanced.</p>
+	  <ul>
+        <li><b>CSS</b> stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets</li>
+        <li>CSS describes <strong>how HTML elements are to be displayed on screen,  
+          paper, or in other media</strong></li>
+        <li>CSS <strong>saves a lot of work</strong>. It can control the layout of 
+           multiple web pages all at once</li>
+        <li>External stylesheets are stored in <b>CSS files</b></li>
+      </ul>
+	</div>
+	<div id="cours_part1" class="courspart" style="display: none">
+	   <h2>CSS Syntax</h2>
+	   <p>A CSS rule-set consists of a selector and a declaration block:</p>
+	    <img src="selector.gif">
+	    <p>The selector points to the HTML element you want to style. <br>
+          The declaration block contains one or more declarations separated by semicolons.<br>
+          Each declaration includes a CSS property name and a value, separated by a colon.<br>
+          A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.</p>
+	</div>
+	<div id="cours_part2" class="courspart" style="display: none;">
+     <h2>How To ?</h2>
+     <p>When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</p>
+     <h2>Three Ways to Insert CSS</h2>
+     <ul>
+		<li>External style sheet</li>
+		<li>Internal style sheet</li>
+		<li>Inline style</li>
+	 </ul>
+	</div>
+	<div id="cours_part3"class="courspart" style="display: none;">
+	   <h2>Css Colors</h2>
+	   <p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+	   <h2>Some css colors</h2>
+	   <div>
+	   <div style="background-color:tomato;width:150px ;padding: 10px ;">Tomato</div>
+	   <div style="background-color:orange;width:150px ;padding: 10px ;">Orange</div>
+       <div style="background-color:dodgerblue;width:150px ;padding: 10px ;">DodgerBlue</div>
+       <div style="background-color:mediumseagreen;width:150px;padding:10px;">MediumGreen</div>
+       <div style="background-color:gray;width:150px ;padding: 10px ;">Gray</div>
+       <div style="background-color:violet;width:150px ;padding: 10px ;">Violet</div>
+       </div>
+	</div>
+	<div id="cours_part4" class="courspart" style="display: none;">
+	   <h2>Css backgrounds</h2>
+	  <p>The CSS background properties are used to define the background effects for elements. <br>CSS background properties:</p>
+	  <ul>
+		  <li>background-color</li>
+		  <li>background-image</li>
+		  <li>background-repeat</li>
+		  <li>background-attachment</li>
+		  <li>background-position</li>
+	 </ul>
+	</div>
+ 
+<div class="btns">
+ <button id="previous" onclick="previous();" >Previous &laquo; </button>
+ <button id="next" onclick="next();">Next &raquo; </button>
+</div>
+</div>
+   
+</body>
+<script type="text/javascript" src="cour1.js"></script>
+</html>

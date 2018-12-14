@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+	<link rel="stylesheet" type="text/css" href="../courses/cour1.css">
+</head>
+<body>
+	<header>
+		<nav id="navbar" class="sticky">
+			<ul>
+				<li><a href="../HOME/index.html"> HOME </a></li>
+				<li class="cour "><a href="quiz1.html"> Html           </a></li>
+				<li class="cour thisCours"><a href="quiz2.html"> Css             </a></li>
+		        <li class="cour"><a href="quiz3.html">JavaScript</a></li>
+				<li class="cour"><a href="quiz4.html"> Php             </a></li>
+				<li><a href="../courses/Css.html"> Courses </a></li>
+				<li class="drop">
+					<div class="dropdown">
+					  <button class="dropbtn" onclick="myFunction()">Quizes  &#9661;
+					  </button>
+					  <div class="dropdown-content" id="myDropdown">
+					    <a href="quiz1.html"> Html Quiz        </a>
+					    <a href="quiz2.html"> Css  Quiz    </a>
+					    <a href="quiz3.html">JavaScript Quiz</a>
+						<a href="quiz4.html"> Php  Quiz    </a> 
+					   </div>
+					  </div> 
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div id="qst1" class="question">
+			<h3>Css Quiz</h3>
+			<h2>1.What does CSS stand for?</h2>
+			<label class="container container1"> Creative Style Sheets
+			  <input type="radio" name="radio1" class="answer1" >
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container1">Colorful Style Sheets
+			  <input type="radio" name="radio1" class="answer1" >
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container1">Computer Style Sheets
+			  <input type="radio" name="radio1" class="answer1">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container1"> Cascading Style Sheets
+			  <input type="radio" name="radio1" class="answer1" >
+			  <span class="checkmark"></span>
+			</label>
+			<button onclick="next() ;">Suivant</button>
+		</div>
+		<div id="qst2" class="question hide">
+			<h3>Css Quiz</h3>
+			<h2>2. What is the correct HTML for referring to an external style sheet?</h2>
+			<label class="container container2"> &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;
+			  <input type="radio" name="radio" class="answer2">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container2"> &lt;stylesheet&gt;mystyle.css&lt;/stylesheet&gt;
+			  <input type="radio" name="radio" class="answer2">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container2"> &lt;style src="mystyle.css"&gt;
+			  <input type="radio" name="radio"class="answer2">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container2"> &lt;style rel="mystyle.css"&gt;
+			  <input type="radio" name="radio"class="answer2">
+			  <span class="checkmark"></span>
+			</label>
+			<button onclick="next() ;">Suivant</button>
+		</div>
+		<div id="qst3" class="question hide">
+			<h3>Css Quiz</h3>
+			<h2>3. Where in an HTML document is the correct place to refer to an external style sheet?</h2>
+			<label class="container container3"> In the &lt;body&gt; section
+			  <input type="radio" name="radio" class="answer3">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container3"> In the &lt;head&gt; section
+			  <input type="radio" name="radio" class="answer3">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container3"> At the end of the document
+			  <input type="radio" name="radio" class="answer3">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container3">Inside a &lt;div&gt; tag
+			  <input type="radio" name="radio"class="answer3">
+			  <span class="checkmark"></span>
+			</label>
+			<button onclick="next() ;">Suivant</button>
+		</div>
+		<div id="qst4" class="question hide">
+			<h3>Css Quiz</h3>
+			<h2>4. Which HTML attribute is used to define inline styles?</h2>
+			<label class="container container4">Class
+			  <input type="radio" name="radio" class="answer4">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container4">Styles
+			  <input type="radio" name="radio" class="answer4">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container4">Font
+			  <input type="radio" name="radio" class="answer4">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container4">Style
+			  <input type="radio" name="radio" class="answer4">
+			  <span class="checkmark"></span>
+			</label>
+			<button onclick="next() ;">Suivant</button>
+		</div>
+		<div id="qst5" class="question hide">
+			<h3>Css Quiz</h3>
+			<h2>5.Which HTML tag is used to define an internal style sheet?</h2>
+			<label class="container container5"> &lt;script&gt;
+			  <input type="radio" name="radio" class="answer5">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container5"> &lt;css&gt;
+			  <input type="radio" name="radio" class="answer5">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container5"> &lt;style&gt;
+			  <input type="radio" name="radio" class="answer5">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container container5"> &lt;stylesheet&gt;
+			  <input type="radio" name="radio" class="answer5">
+			  <span class="checkmark"></span>
+			</label>
+			<button onclick="show_score() ;">Submit</button>
+		</div>
+		<div id="ScoreMenu" class="question hide">
+			<h3>Css Quiz</h3>
+			<h3>Your Score is:</h3>
+		   <div class="rate">	
+			<span id="Score1" class="star">★</span>
+			<span id="Score2" class="star">★</span>
+			<span id="Score3" class="star">★</span>
+			<span id="Score4" class="star">★</span>
+			<span id="Score5" class="star">★</span>
+			</div>
+			<br>
+			<span id="TotalScore">0%</span>
+		</div><br><br>
+
+	</main>
+   
+</body>
+<script type="text/javascript">var right_answers=[4,1,2,4,3] ;</script>
+<script type="text/javascript" src="quiz.js"></script>
+</html>
